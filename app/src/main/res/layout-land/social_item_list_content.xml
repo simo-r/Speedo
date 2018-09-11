@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/CustomCardViewStyle"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:longClickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/receive_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="@string/received_on"
+               />
+
+            <TextView
+                android:id="@+id/receive_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:hint="@string/data"
+                 />
+
+            <TextView
+                android:id="@+id/da"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="@string/from"
+                 />
+
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:layout_margin="@dimen/text_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="@string/username"
+                />
+
+
+        </LinearLayout>
+
+    <android.support.v7.widget.GridLayout xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            grid:layout_gravity="center_horizontal"
+            android:background="?android:attr/listDivider"
+            grid:layout_column="0"
+            grid:layout_columnSpan="4"
+            grid:layout_row="0"/>
+
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:hint="@string/data"
+            grid:layout_column="0"
+            grid:layout_columnSpan="3"
+            grid:layout_row="0" />
+
+        <!-- DURATION -->
+        <TextView
+            android:id="@+id/durationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/run_duration_land"
+            grid:layout_column="0"
+            grid:layout_gravity="center"
+            grid:layout_row="1" />
+
+        <TextView
+            android:id="@+id/durationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:hint="@string/duration_hint"
+            android:textAlignment="center"
+            grid:layout_column="0"
+            grid:layout_gravity="center"
+            grid:layout_row="2" />
+
+        <!-- END DURATION -->
+
+        <!-- DISTANCE -->
+        <TextView
+            android:id="@+id/distanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/run_distance_land"
+            grid:layout_column="1"
+            grid:layout_gravity="center"
+            grid:layout_row="1" />
+
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:hint="@string/distance_hint"
+            android:textAlignment="center"
+            grid:layout_column="1"
+            grid:layout_gravity="center"
+            grid:layout_row="2" />
+
+        <!-- END DISTANCE -->
+
+        <!-- SPEED -->
+        <TextView
+            android:id="@+id/speedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/run_speed_land"
+            grid:layout_column="2"
+            grid:layout_gravity="center"
+            grid:layout_row="1" />
+
+        <TextView
+            android:id="@+id/speedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:hint="@string/speed_hint"
+            android:textAlignment="center"
+            grid:layout_column="2"
+            grid:layout_gravity="center"
+            grid:layout_row="2" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mapButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            grid:layout_gravity="center"
+            android:clickable="true"
+            android:elevation="@dimen/fab_elevation"
+            android:focusable="true"
+            android:scaleType="center"
+            card_view:backgroundTint="@null"
+            card_view:srcCompat="@drawable/ic_map_icon"
+            grid:layout_rowSpan="3"
+            grid:layout_column="3"
+            grid:layout_row="0" />
+
+
+        <!-- END SPEED -->
+
+    </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

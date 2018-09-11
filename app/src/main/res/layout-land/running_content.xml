@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/CustomCardViewStyle"
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- DISTANCE -->
+
+                <TextView
+                    android:id="@+id/distanceLabel"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/run_distance_land"
+                    grid:layout_column="0"
+                    grid:layout_gravity="start"
+                    grid:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/distanceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="@string/distance_hint"
+                    android:textAlignment="center"
+                    grid:layout_column="0"
+                    grid:layout_gravity="center"
+                    grid:layout_row="1" />
+
+                <!-- END DISTANCE -->
+
+                <!-- SPEED -->
+                <TextView
+                    android:id="@+id/speedLabel"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/run_speed_land"
+                    grid:layout_column="1"
+                    grid:layout_gravity="start"
+                    grid:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/speedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="@string/speed_hint"
+                    android:textAlignment="center"
+                    grid:layout_column="1"
+                    grid:layout_gravity="center"
+                    grid:layout_row="1" />
+
+                <!-- END SPEED -->
+
+
+            </android.support.v7.widget.GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/buttonRun"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:scaleType="center"
+            app:backgroundTint="@null"
+            app:srcCompat="@drawable/ic_run_icon" />
+    </LinearLayout>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+    </org.osmdroid.views.MapView>
+
+
+</LinearLayout>
+

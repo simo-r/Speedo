@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name" translatable="false">Speedo</string>
+    <string name="run">Run</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="social" translatable="false">Social</string>
+    <string name="no_permission">The application doesn\'t have permissions.</string>
+    <string name="data" translatable="false">Data</string>
+    <string name="run_duration">Run duration</string>
+    <string name="duration_hint" translatable="false">0:0:0</string>
+    <string name="duration_metric" translatable="false">h:m:s</string>
+    <string name="run_distance">Run distance</string>
+    <string name="distance_hint" translatable="false">0.00</string>
+    <string name="distance_metric" translatable="false">km</string>
+    <string name="run_speed">Average speed</string>
+    <string name="speed_hint" translatable="false">0.00</string>
+    <string name="speed_metric" translatable="false">m/s</string>
+    <string name="run_duration_land">Run duration (h:m:s)</string>
+    <string name="run_distance_land">Run distance (km)</string>
+    <string name="run_speed_land">Average speed (m/s)</string>
+    <string name="direct_share" translatable="false">Wifi direct</string>
+    <string name="run_notification_bt">Run distance: %1$.2f km\nAverage speed: %2$.2f m/s</string>
+    <string name="run_notification">Run distance %1$.2f km</string>
+    <string name="tab_profile">Your runs</string>
+    <string name="tab_run" translatable="false">Speedo</string>
+    <string name="tab_social">Your friends</string>
+    <string name="abort_share">Sharing canceled!</string>
+    <string name="success_share">Shared successfully!</string>
+    <string name="error">Error!</string>
+    <string name="share_retrieve_error">Unable to retrieve local data</string>
+    <string name="share_receive_error">Unable to receive data from peer</string>
+    <string name="abort_share_fail"> Unable to cancel run sharing.</string>
+    <string name="wifi_direct_disabled">Wifi direct is disabled.</string>
+    <string name="channel_disconnect">Channel disconnection, re-enable wifi direct.</string>
+    <string name="direct_not_supported">Wifi direct not supported</string>
+    <string name="direct_internal_error">Internal error during wifi direct peer discovering</string>
+    <string name="direct_busy">Wifi direct busy or unable to serve request</string>
+    <string name="direct_unknown_error">Wifi direct unknown error</string>
+    <string name="cancel">Cancel</string>
+    <string name="connecting">Connecting to %1$s</string>
+    <string name="run_deleted">Run deleted!</string>
+    <string name="map_info_speed">Speed: %1$.2f m/s Average speed: %2$.2f m/s</string>
+    <string name="no_geoloc">Enable geolocation to correctly use the app</string>
+    <string name="select_device">Select a device</string>
+    <string name="share_content">On %1$s I ran for %2$s h:m:s covering %3$s km at an average speed of %4$s m/s</string>
+    <string name="speed_avg_stats_bar">Average speed (m/s)</string>
+    <string name="your_stats">Your statistics:</string>
+    <string name="runs">Runs</string>
+    <string name="zero_hint" translatable="false">0</string>
+    <string name="km" translatable="false">Km</string>
+    <string name="time_app_bar">Time (h:m:s)</string>
+    <string name="username">Username</string>
+    <string name="shared_run">Shared runs</string>
+    <string name="received_run">Received runs</string>
+    <string name="from">Shared by:</string>
+    <string name="received_on">Received on:</string>
+    <string name="max_username_char">Username must contain less than 10 characters.</string>
+    <string name="edit_username">Edit Username</string>
+    <string name="cancel_username_edit">Cancel username edit</string>
+</resources>

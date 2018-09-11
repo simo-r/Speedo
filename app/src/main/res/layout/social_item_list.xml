@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coord_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appBar"
+        android:elevation="@dimen/card_elevation">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/sent_run"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:maxWidth="100dp"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="@string/shared_run"
+                    />
+
+
+                <TextView
+                    android:id="@+id/sent_count_run"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:maxWidth="100dp"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:hint="@string/zero_hint"
+                    />
+
+                <TextView
+                    android:id="@+id/received_run"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:maxWidth="100dp"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:text="@string/received_run"
+                    />
+
+                <TextView
+                    android:id="@+id/received_count_run"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:maxWidth="100dp"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:hint="@string/zero_hint"
+                    />
+
+            </GridLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/appBar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+
